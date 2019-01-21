@@ -1,0 +1,289 @@
+html, body, div, ul, li, a, h1, h2, ol, p, h3 {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: url(../images/bodybackground2slice.png) top repeat;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 100%;
+	color: #cbc9c9;
+}
+
+#main {
+	margin-top:8px;
+}
+
+#container {
+	background: black;
+	width: 944px;
+	margin: auto;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px; 
+	border-top-style: solid;
+	border-top-color: #8f8f8f;
+	border-top-width: 2px; 
+}
+
+#header {
+	background: url(../images/youth.jpg) top no-repeat;
+	height: 248px;
+}
+
+#header h1 {
+	text-indent:-9999px;
+	float:left;
+}
+
+
+
+#title {
+	background: url(../images/title.png) #000000;
+	height: 70px;
+	margin-top:10px;
+}
+
+
+#navbar {
+	background:black;
+	height:45px;
+}
+
+
+#navbar ul {
+	list-style:none;
+}
+
+
+#navbar li {
+	float:left;
+}
+
+#navbar  li a {
+	display: block;
+	float: left;
+	height: 45px;
+	background-image: url(../images/navbar4.png);
+	text-decoration:none;
+	text-indent: -9999px;
+}
+
+#navbar li a.home {
+	width:136px;
+	background-position: 0 0;
+}
+
+#navbar li a.home:hover, #navbar li a.home:focus {
+	width: 136px;
+	background-position: 0 -46px;
+}
+
+#navbar li a.home:active {
+	width:136px;
+	background-position: 0 -90px;
+}
+
+
+#navbar li a.history {
+	width: 152px;
+	background-position: -139px 0;
+}
+
+#navbar li a.history:hover, #navbar li a.history:focus {
+	width: 152px;
+	background-position: -139px -46px;
+}
+
+#navbar li a.history:active {
+	width: 152px;
+	background-position: -139px -90px;
+}
+
+#navbar li a.about {
+	width: 152px;
+	background-position: -290px 0;
+}
+
+#navbar li a.about:hover, #navbar li a.about:focus {
+	width: 152px;
+	background-position: -290px -46px;
+}
+
+#navbar li a.about:active {
+	width: 152px;
+	background-position: -290px -90px;
+}
+
+#navbar li a.boardmembers {
+	width: 229px;
+	background-position: -441px 0;
+}
+
+#navbar li a.boardmembers:hover, #navbar li a.boardmembers:focus {
+	width: 229px;
+	background-position: -441px -46px;
+}
+
+#navbar li a.boardmembers:active {
+	width: 229px;
+	background-position: -441px -90px;
+}
+
+#navbar li a.youth {
+	width: 143px;
+	background-position: -668px 0;
+}
+
+#navbar li a.youth:hover, #navbar li a.youth:focus {
+	width: 143px;
+	background-position: -668px -46px;
+}
+
+#navbar li a.youth:active {
+	width: 143px;
+	background-position: -668px -90px;
+}
+
+#navbar li a.contact {
+	width: 132px;
+	background-position: -810px 0;
+}
+
+#navbar li a.contact:hover, #navbar li a.contact:focus {
+	width: 132px;
+	background-position: -810px -46px;
+}
+
+#navbar li a.contact:active {
+	width: 132px;
+	background-position: -810px -90px;
+}
+a {outline: none;}
+
+
+#sidebar {
+	background:#1a1919;
+	height: 154px;
+	float:right;
+	width:261px;
+	margin-top: 35px;
+	margin-right: 35px;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px; 
+}
+
+
+#armor {
+	background-color:#1a1919;
+	width:213px;
+	height:141px;
+	float:left;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom:10px;
+}
+
+#armor img{
+	float:left;
+	border:0px;
+}
+
+
+#youth {
+	background:  #1a1919;
+	float:left;
+	width: 548px;
+	margin-top: 35px;
+	margin-left: 35px;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px; 
+	clear:both;
+	margin-bottom:35px;
+}
+
+#youth h2, h1, p, ul, ol {
+	font-size:1.125em;
+}
+
+#youth ul.padding {
+padding-bottom:45px;
+}
+
+#youth li {
+	padding-top:5px;
+}
+
+#youth p {
+	
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:25px;
+}
+
+#youth h2 {
+	text-align:center;
+	padding-left:25px;
+	padding-right:25px;
+	margin-top:25px;
+}
+
+#youth ol {
+	padding-right:25px;
+	padding-left:55px;
+	padding-top:10px;
+}
+
+
+
+
+#youth ul {
+	list-style:none;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+#youth a {
+	text-decoration:none;
+}
+
+
+#footer {
+	background: url(../images/youthfooter.png);
+	height: 156px;
+	clear:both;
+	border-top-style: solid;
+	border-top-color: #8f8f8f;
+	border-top-width: 1px;
+	margin-top:35px; 
+}
+
+#footermenu {
+	height:60px;
+	width:721px;
+	float:left;
+	margin-top: 65px;
+	margin-left: 65px;
+}
+
+#footermenu  img  {
+	float:left;
+	border:0px;
+	margin:0;
+	
+}
+
+#lion {
+	margin-top: 15px;
+	margin-right: 60px;
+	float:right;
+}
+
+#lion img{
+	border:0px;
+}
+
+
+

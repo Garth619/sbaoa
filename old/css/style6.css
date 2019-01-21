@@ -1,0 +1,313 @@
+html, body, div, ul, li, a, h1, h2, h3, ol {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: url(../images/bodybackground2slice.png) top repeat-x;
+	font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 100%;
+	color: #cbc9c9;
+}
+
+#main {
+margin-top:8px;
+margin-bottom:8px;
+}
+
+#container {
+	background: black;
+	width: 944px;
+	margin: auto;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px; 
+	
+}
+
+#header {
+	background: url(../images/moonrise.jpg) ;
+	height: 248px;
+	border-bottom-style: solid;
+	border-bottom-color: #8f8f8f;
+	border-bottom-width: 1px;
+}
+
+#header h1 {
+	text-indent:-9999px;
+	float:left;
+}
+
+.signitures a {
+	text-decoration:none;
+	font-size:12px;
+	color: #ffffff;
+	float:left;
+	
+}
+
+#title {
+	background: url(../images/title.png) #000000;
+	height: 70px;
+	margin-top:10px;
+}
+
+
+#navbar {
+	background:black;
+	height:45px;
+}
+
+
+#navbar ul {
+	list-style:none;
+}
+
+
+#navbar li {
+	float:left;
+}
+
+#navbar  li a {
+	display: block;
+	float: left;
+	height: 45px;
+	background-image: url(../images/navbar4.png);
+	text-decoration:none;
+	text-indent: -9999px;
+}
+
+#navbar li a.home {
+	width:136px;
+	background-position: 0 0;
+}
+
+#navbar li a.home:hover, #navbar li a.home:focus {
+	width: 136px;
+	background-position: 0 -46px;
+}
+
+#navbar li a.home:active {
+	width:136px;
+	background-position: 0 -90px;
+}
+
+
+#navbar li a.history {
+	width: 152px;
+	background-position: -139px 0;
+}
+
+#navbar li a.history:hover, #navbar li a.history:focus {
+	width: 152px;
+	background-position: -139px -46px;
+}
+
+#navbar li a.history:active {
+	width: 152px;
+	background-position: -139px -90px;
+}
+
+#navbar li a.about {
+	width: 152px;
+	background-position: -290px 0;
+}
+
+#navbar li a.about:hover, #navbar li a.about:focus {
+	width: 152px;
+	background-position: -290px -46px;
+}
+
+#navbar li a.about:active {
+	width: 152px;
+	background-position: -290px -90px;
+}
+
+#navbar li a.boardmembers {
+	width: 229px;
+	background-position: -441px 0;
+}
+
+#navbar li a.boardmembers:hover, #navbar li a.boardmembers:focus {
+	width: 229px;
+	background-position: -441px -46px;
+}
+
+#navbar li a.boardmembers:active {
+	width: 229px;
+	background-position: -441px -90px;
+}
+
+#navbar li a.youth {
+	width: 143px;
+	background-position: -668px 0;
+}
+
+#navbar li a.youth:hover, #navbar li a.youth:focus {
+	width: 143px;
+	background-position: -668px -46px;
+}
+
+#navbar li a.youth:active {
+	width: 143px;
+	background-position: -668px -90px;
+}
+
+#navbar li a.contact {
+	width: 132px;
+	background-position: -810px 0;
+}
+
+#navbar li a.contact:hover, #navbar li a.contact:focus {
+	width: 132px;
+	background-position: -810px -46px;
+}
+
+#navbar li a.contact:active {
+	width: 132px;
+	background-position: -810px -90px;
+}
+
+a {outline: none;}
+
+
+#sidebar {
+	background:#1a1919;
+	height: 154px;
+	float:right;
+	width:261px;
+	margin-top: 35px;
+	margin-right: 35px;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px; 
+}
+
+
+#armor {
+	background-color:#1a1919;
+	width:213px;
+	height:141px;
+	float:left;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom:10px;
+}
+
+#armor img{
+	float:left;
+	border:0px;
+}
+
+
+
+#about {
+	background:  #1a1919;
+	float:left;
+	width: 548px;
+	margin-top: 35px;
+	margin-left: 35px;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px;
+ 	
+	clear:both;
+	margin-bottom:35px;
+	
+}
+
+#about p {
+	padding-left:25px;
+	padding-right:25px;
+	font-size:1.125em;
+	text-indent:1.875em;
+	margin:0px;
+	
+	
+}
+
+#about p.hello {
+	padding-top:35px;
+	text-indent:0px;
+	margin:0px;
+}
+
+#about p.sincerely {
+	padding-top:25px;
+	text-indent:0px;
+	margin:0px;
+}
+
+
+
+#about a {
+	text-decoration:none;
+	padding-top:0px;
+}
+	
+
+
+.signitures {
+	padding-left:25px;
+	width:300px;
+	clear:both;
+	margin-bottom:30px;
+	}
+
+#about ul.founder {
+	padding-left:25px;
+	font-size:1.125em;
+	float:left;
+	padding-top:15px;
+	list-style:none;
+	padding-bottom:45px;
+}
+	
+
+
+#video {
+	width:425px;
+	height:250px;
+	margin-left: 60px;
+	margin-top: 35px;
+	border-style: solid;
+	border-color: #8f8f8f;
+	border-width: 1px; 
+}
+
+
+#footer {
+	background: url(../images/moonrisefooter.jpg);
+	height: 206px;
+	clear:both;
+	border-top-style: solid;
+	border-top-color: #8f8f8f;
+	border-top-width: 1px;
+	margin-top:35px; 
+}
+
+#footermenu {
+	height:60px;
+	width:721px;
+	float:left;
+	margin-top: 105px;
+	margin-left: 65px;
+}
+
+#footermenu  img  {
+	float:left;
+	border:0px;
+	margin:0;
+	
+}
+
+
+#lion {
+	margin-top: 50px;
+	margin-right: 60px;
+	float:right;
+}
+#lion img{
+	border:0px;
+}
+

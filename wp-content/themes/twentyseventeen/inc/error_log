@@ -1,0 +1,16 @@
+[06-Dec-2018 05:04:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/template-tags.php:196
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/template-tags.php on line 196
+[06-Dec-2018 06:53:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/template-tags.php:196
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/template-tags.php on line 196
+[06-Dec-2018 16:30:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/icon-functions.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/icon-functions.php on line 22
+[06-Dec-2018 23:35:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/icon-functions.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyseventeen/inc/icon-functions.php on line 22

@@ -1,0 +1,48 @@
+[03-Jul-2014 19:26:56] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[23-Oct-2014 03:33:31] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[26-Oct-2014 21:21:49] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[28-Oct-2014 12:30:30] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[11-Nov-2014 09:53:07] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[27-Nov-2014 04:23:53] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[28-Nov-2014 04:54:12] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[28-Nov-2014 08:53:53] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php52/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /opt/php52/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Feb-2015 02:02:26 UTC] PHP Fatal error:  Directive 'allow_call_time_pass_reference' is no longer available in PHP in Unknown on line 0
+[05-May-2015 21:51:20] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[10-May-2015 08:48:49] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[28-May-2015 04:37:59] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[24-Jun-2015 13:43:28] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[28-Jun-2015 23:36:56] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[27-Jul-2015 18:39:42] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[19-Aug-2015 16:17:08] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60
+[21-Aug-2015 12:52:57] PHP Fatal error:  Call to undefined function  add_action() in /home/garrett/public_html/sbaoa.org/wp-content/plugins/hello.php on line 60

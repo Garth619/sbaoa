@@ -1,0 +1,16 @@
+[04-Dec-2018 20:37:09 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/404.php on line 1
+[01-Jan-2019 13:30:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/404.php on line 1
+[01-Jan-2019 13:30:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/header.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/header.php on line 2
+[01-Jan-2019 13:30:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/Divi/index.php on line 1

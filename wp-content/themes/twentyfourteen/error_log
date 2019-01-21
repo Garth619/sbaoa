@@ -1,0 +1,26 @@
+[11-Oct-2015 10:27:19] PHP Fatal error:  Call to undefined function  get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
+[28-Apr-2016 06:12:21 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
+[01-May-2016 14:51:49 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
+[01-May-2016 15:09:49 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
+[28-Nov-2016 20:20:50 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/index.php on line 17
+[28-Jan-2018 21:23:17 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
+[05-Dec-2018 18:22:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/header.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/header.php on line 13
+[05-Dec-2018 20:45:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/header.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/header.php on line 13
+[11-Dec-2018 04:03:21 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/functions.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/functions.php on line 43
+[11-Dec-2018 12:36:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
+[11-Dec-2018 19:52:57 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/garrett/public_html/sbaoa.org/wp-content/themes/twentyfourteen/404.php on line 10
