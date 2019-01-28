@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Backend GUI pointers
- * (c) WebFactory Ltd, 2015 - 2018
+ * (c) WebFactory Ltd, 2015 - 2019
  */
 
- 
+
 jQuery(document).ready(function($){
   if (typeof ucp_pointers  == 'undefined') {
     return;

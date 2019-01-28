@@ -1,7 +1,7 @@
 /*
  * UnderConstructionPage
  * Clock CSS
- * (c) WebFactory Ltd, 2015 - 2018
+ * (c) WebFactory Ltd, 2015 - 2019
  */
 
 
@@ -116,7 +116,6 @@ h1 {
   }
   .display-cell {
     display: block;
-    vertical-align: middle;
     float: none;
   }
   #hero-image img {

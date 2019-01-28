@@ -408,10 +408,20 @@
 			} else {
 				real_popup_height = this_popup.find( '.et_bloom_form_container_wrapper' ).height() + $message_space;
 
+				/**
+				 * Sometimes real_popup_height return 0 because the page is no loaded fully. This
+				 * is added to set the Bloom container height as 100% to avoid 0 height. Note, the
+				 * height will be set as 100% only when the real_popup_height is 0.
+				 */
+				var container_height = real_popup_height;
+				if (parseInt(real_popup_height) === 0) {
+					container_height = '100%';
+				}
+
 				if ( this_popup.hasClass( 'et_bloom_form_right' ) || this_popup.hasClass( 'et_bloom_form_left' ) ) {
 					this_popup.find( '.et_bloom_form_header' ).css( { 'height' : real_popup_height * breakout_offset - dashed_offset } );
 					this_popup.find( '.et_bloom_form_content' ).css( { 'min-height' : real_popup_height - dashed_offset } );
-					this_popup.find( '.et_bloom_form_container_wrapper' ).css( { 'height' : real_popup_height } );
+					this_popup.find( '.et_bloom_form_container_wrapper' ).css( { 'height' : container_height } );
 				}
 			}
 
@@ -453,12 +463,12 @@
 			var $custom_fields    = $fields_container.find('.et_bloom_custom_field input[type=text], .et_bloom_checkbox_handle, [data-field_type="radio"], textarea, select');
 			var custom_fields     = {};
 			var is_valid          = true;
-			
+
 			// Email Validation
 			// Use the regex defined in the HTML5 spec for input[type=email] validation
 			// (see https://www.w3.org/TR/2016/REC-html51-20161101/sec-forms.html#email-state-typeemail)
 			var et_email_reg_html5 = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-			
+
 			this_form.find('.et_bloom_warn_field').removeClass('et_bloom_warn_field');
 
 			if (this_form.length > 0 && typeof this_form[0].reportValidity === 'function') {
@@ -553,7 +563,7 @@
 					// remove trailing/leading spaces and convert email to lowercase
 					var processed_email = this_val.trim().toLowerCase();
 					var is_valid_email = et_email_reg_html5.test(processed_email);
-					
+
 					if ('' !== processed_email && !is_valid_email) {
 						$this_el.addClass('et_bloom_warn_field');
 						is_valid = false;

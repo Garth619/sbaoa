@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Plain Text theme CSS
- * (c) WebFactory Ltd, 2015 - 2018
+ * (c) WebFactory Ltd, 2015 - 2019
  */
- 
- 
+
+
 body {
     font-weight: 400;
     font-size: 1.25rem;
@@ -13,7 +13,7 @@ body {
     background: #f7f7f7;
     text-rendering: optimizeLegibility;
 }
-  
+
 .container {
   background-color: #f7f7f7;
 }
@@ -41,7 +41,7 @@ header {
   background-color: #ffffff;
   display: inline-block;
 }
-    
+
 h1 {
   font-size: 6rem;
   color: #23272a;

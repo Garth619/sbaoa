@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Christmas theme CSS
- * (c) Web factory Ltd, 2015 - 2018
+ * (c) Web factory Ltd, 2015 - 2019
  */
- 
- 
+
+
 html {
    height: 100%;
    padding: 0;
@@ -23,7 +23,7 @@ body {
   background-attachment: fixed;
   background-color: #fff;
 }
-  
+
 #hero-image {
   text-align: center;
   margin: 0 auto 0 auto;

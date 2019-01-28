@@ -79,7 +79,7 @@
         * @return  TRUE if address is valid and FALSE if not.
         */
         protected function isValidEmail($email){
-             return eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email);
+	        return is_email( $email );
         }
 
         /**
@@ -87,7 +87,7 @@
         * @param string $request_url - is the URL where the request will be made
         * @param string $parameter - if it is not empty then this parameter will be sent using POST method
         * @param string $type - GET/POST/PUT/DELETE
-        * @return a string containing server output/response
+        * @return string server output/response
         */
         protected function doServerCall($request_url, $parameter = '', $type = "GET") {
 
@@ -145,13 +145,16 @@
             $parsedReturn = simplexml_load_string($return);
             $call2 = '';
 
-            if(empty($parsedReturn) || !(is_object($parsedReturn) || is_array($parsedReturn))) { return false; }
+            if(empty($parsedReturn) || !(is_object($parsedReturn) || is_array($parsedReturn))) {
+	            return array();
+            }
 
             foreach ($parsedReturn->link as $item) {
                 $tmp = $item->Attributes();
                 $nextUrl = '';
                 if ((string) $tmp->rel == 'next') {
                     $nextUrl = (string) $tmp->href;
+	                $nextUrl = urldecode( $nextUrl );
                     $arrTmp = explode($this->login, $nextUrl);
                     $nextUrl = $arrTmp[1];
                     $call2 = $this->apiPath.$nextUrl;
@@ -227,10 +230,10 @@
     /**
      * Method that checks if a subscriber already exist
      * @param string $email
-     * @return subscriber`s id if it exists or false if it doesn't
+     * @return string|int subscriber`s id if it exists or false if it doesn't
      */
 	 public	function subscriberExists($email = '') {
-		 $call = $this->apiPath.'/contacts?email='.$email;
+		 $call = $this->apiPath.'/contacts?email='.rawurlencode( $email );
 		 $return = $this->doServerCall($call);
 		 $xml = simplexml_load_string($return);
 		 $id = $xml->entry->id;
@@ -242,14 +245,14 @@
      * Method that retrieves from Constant Contact a collection with all the Subscribers
      * If email parameter is mentioned then only mentioned contact is retrieved.
      * @param string $email
-     * @return Bi-Dimenstional array with information about contacts.
+     * @return array Bi-Dimenstional array with information about contacts.
      */
 	 public	function getSubscribers($email = '', $page = '') {
 			$contacts = array();
 			$contacts['items'] = array();
 
 			if (! empty($email)) {
-				$call = $this->apiPath.'/contacts?email='.$email;
+				$call = $this->apiPath.'/contacts?email='.rawurlencode( $email );
 			} else {
 				if (! empty($page)) {
 					$call = $this->apiPath.$page;
@@ -266,15 +269,21 @@
 
 				if (! empty($attributes['rel']) && $attributes['rel'] == 'next') {
 					$tmp = explode($this->login, $attributes['href']);
-					$contacts['next'] = $tmp[1];
+					if( isset( $tmp[1] ) ) {
+						$contacts['next'] = $tmp[1];
+					}
 				}
 				if (! empty($attributes['rel']) && $attributes['rel'] == 'first') {
 					$tmp = explode($this->login, $attributes['href']);
-					$contacts['first'] = $tmp[1];
+					if( isset( $tmp[1] ) ) {
+						$contacts['first'] = $tmp[1];
+					}
 				}
 				if (! empty($attributes['rel']) && $attributes['rel'] == 'current') {
 					$tmp = explode($this->login, $attributes['href']);
-					$contacts['current'] = $tmp[1];
+					if( isset( $tmp[1] ) ) {
+						$contacts['current'] =  $tmp[1];
+					}
 				}
 			}
 
@@ -295,10 +304,13 @@
 	 /**
      * Retrieves all the details for a specific contact identified by $email.
      * @param string $email
-     * @return array with all information about the contact.
+     * @return false|array with all information about the contact, or false if contact doesn't exist
      */
 	 public	function getSubscriberDetails($email) {
 			$contact = $this->getSubscribers($email);
+			 if ( empty( $contact['items'] ) ) {
+				 return false;
+			 }
 			$fullContact = array();
 			$call = str_replace('http://', 'https://', $contact['items'][0]['id']);
 			// Convert id URI to BASIC compliant
@@ -429,7 +441,7 @@
      * Method that compose the needed XML format for a contact
      * @param string $id
      * @param array $params
-     * @return Formed XML
+     * @return string Formed XML
      */
 	 public	function createContactXML($id, $params = array()) {
 			if ( empty($id)) {

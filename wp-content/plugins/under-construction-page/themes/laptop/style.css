@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Laptop theme CSS
- * (c) WebFactory Ltd, 2015 - 2018
+ * (c) WebFactory Ltd, 2015 - 2019
  */
- 
- 
+
+
 html {
    height: 100%;
    padding: 0;
@@ -23,11 +23,11 @@ body {
   margin: 0;
   height: 100%;
 }
-  
+
 .top-container {
   padding: 100px 0 75px 0;
 }
-  
+
 #hero-image {
   text-align: right;
 }
@@ -99,7 +99,7 @@ h1 {
     display: block;
     vertical-align: middle;
     float: none;
-  } 
+  }
   #hero-image img {
     max-height: 250px;
     padding-bottom: 25px;

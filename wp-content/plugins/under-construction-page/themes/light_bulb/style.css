@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Light Bulb theme CSS
- * (c) WebFactory Ltd, 2015 - 2018
+ * (c) WebFactory Ltd, 2015 - 2019
  */
- 
- 
+
+
 html {
    height: 100%;
    padding: 0;
@@ -16,8 +16,8 @@ body {
   font-size: 14px;
   line-height: 120%;
   color:  #2e2e2e; /* #b9b9b9; */
-  
-  
+
+
 background: #8e9eab;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -27,11 +27,11 @@ background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, F
   margin: 0;
   height: 100%;
 }
-  
+
 .top-container {
   padding: 50px 0;
 }
-  
+
 #hero-image {
   text-align: center;
 }
@@ -103,7 +103,7 @@ h1 {
     display: block;
     vertical-align: middle;
     float: none;
-  } 
+  }
   #hero-image img {
     max-height: 250px
   }

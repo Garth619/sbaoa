@@ -184,19 +184,41 @@ class GFLogging extends GFAddOn {
 	 */
 	public function plugin_settings_page() {
 
-		// If the delete_log parameter is set, delete the log file and display a message.
+
+		// If the delete_log parameter is set, delete the log file and redirect.
 		$plugin_slug = rgget( 'delete_log' );
 		if ( $plugin_slug ) {
+
 			$supported_plugins = $this->get_supported_plugins();
+
 			if ( isset( $supported_plugins[ $plugin_slug ] ) ) {
-				if ( wp_verify_nonce( rgget( $this->_nonce_action ), $this->_nonce_action ) && $this->delete_log_file( rgget( 'delete_log' ) ) ) {
-					GFCommon::add_message( esc_html__( 'Log file was successfully deleted.', 'gravityforms' ) );
+				if ( wp_verify_nonce( rgget( $this->_nonce_action ), $this->_nonce_action ) && $this->delete_log_file( $plugin_slug ) ) {
+
+					// Prepare redirect URL.
+					$redirect_url = remove_query_arg( array( 'delete_log', 'gform_delete_log' ) );
+					$redirect_url = add_query_arg( array( 'deleted' => '1' ), $redirect_url );
+					$redirect_url = esc_url_raw( $redirect_url );
+
+					?>
+					<script type="text/javascript">
+						document.location.href = <?php echo json_encode( $redirect_url ); ?>;
+					</script>
+					<?php
+					die();
+
 				} else {
+
+					// Display error message.
 					GFCommon::add_error_message( esc_html__( 'Log file could not be deleted.', 'gravityforms' ) );
 				}
 			} else {
 				GFCommon::add_error_message( esc_html__( 'Invalid log file.', 'gravityforms' ) );
 			}
+		}
+
+		// If a log file was deleted, display message.
+		if ( '1' === rgget( 'deleted' ) ) {
+			GFCommon::add_message( esc_html__( 'Log file was successfully deleted.', 'gravityforms' ) );
 		}
 
 		parent::plugin_settings_page();
@@ -498,7 +520,7 @@ class GFLogging extends GFAddOn {
 					unlink( $file ); // Delete file.
 				}
 			}
-			rmdir( $dir );
+			@rmdir( $dir );
 		}
 
 	}
@@ -549,7 +571,7 @@ class GFLogging extends GFAddOn {
 
 		if ( ! file_exists( $log_dir ) ) {
 			wp_mkdir_p( $log_dir );
-			touch( $log_dir . 'index.html' );
+			@touch( $log_dir . 'index.html' );
 		}
 
 		$plugin_setting = $this->get_plugin_setting( $plugin_name );
@@ -942,6 +964,31 @@ class GFLogging extends GFAddOn {
 	public function load_text_domain() {
 		GFCommon::load_gf_text_domain();
 	}
+
+	/**
+	 * Register Gravity Forms capabilities with Gravity Forms group in User Role Editor plugin.
+	 *
+	 * @since  2.4
+	 *
+	 * @param array  $groups Current capability groups.
+	 * @param string $cap_id Capability identifier.
+	 *
+	 * @return array
+	 */
+	public function filter_ure_custom_capability_groups( $groups = array(), $cap_id = '' ) {
+
+		// Get Add-On capabilities.
+		$caps = $this->_capabilities;
+
+		// If capability belongs to Add-On, register it to group.
+		if ( in_array( $cap_id, $caps, true ) ) {
+			$groups[] = 'gravityforms';
+		}
+
+		return $groups;
+
+	}
+
 }
 
 /**

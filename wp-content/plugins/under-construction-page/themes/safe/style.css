@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Safe theme CSS
- * (c) WebFactory Ltd, 2015 - 2018
+ * (c) WebFactory Ltd, 2015 - 2019
  */
- 
- 
+
+
 html {
    height: 100%;
    padding: 0;
@@ -23,11 +23,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;;
 }
-  
+
 .top-container {
   padding: 50px 0;
 }
-  
+
 #hero-image {
   text-align: center;
 }
@@ -99,7 +99,7 @@ h1 {
     display: block;
     vertical-align: middle;
     float: none;
-  } 
+  }
   #hero-image img {
     max-height: 250px
   }

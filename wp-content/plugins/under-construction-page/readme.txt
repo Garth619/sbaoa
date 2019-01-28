@@ -1,10 +1,10 @@
 === Under Construction ===
-Contributors: WebFactory, UnderConstructionPage
+Contributors: WebFactory, UnderConstructionPage, googlemapswidget, securityninja, wpreset
 Tags: maintenance mode, maintenance page, coming soon page, landing page, under construction, under construction page, coming soon, launch page, coming soon mode, maintenance mode page, offline page, maintenance
 Requires at least: 4.0
 Requires PHP: 5.2
-Tested up to: 4.9
-Stable tag: 3.10
+Tested up to: 5.0
+Stable tag: 3.31
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,8 @@ Create an Under Construction Page, Maintenance Mode Page, Coming Soon Page or a 
 
 A simple, no-nonsense plugin for all those situations when you have to hide the site behind an Under Construction page for a while. Live examples are available on the <a href="https://underconstructionpage.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=website" rel="friend">Under Construction website</a>. Give us a shout on Twitter <a href="http://twitter.com/WebFactoryLtd">@WebFactoryLtd</a> or check out the <a href="https://youtu.be/fqqWrQENSDc">video</a>.
 
+UCP has full support for collecting leads and subscribers via optin boxes in content, and optin popups. We've integrated <a href="https://wordpress.org/plugins/mailoptin/">MailOptin</a> a great, free plugin into UCP that connects to MailChimp and numerous other autoresponder services allowing you to easily collect emails.
+
 
 **Options**
 
@@ -33,6 +35,7 @@ A simple, no-nonsense plugin for all those situations when you have to hide the 
 * Description - page description, for SEO
 * Headline - main headline/title
 * Content - anything you need to display, from styled text to images
+* Optin box, optin popup - collect leads and emails and sync with MailChimp and other autoresponders
 * Login Button - show a discrete link to the login form, or WP admin if you're logged in
 * Social icons/links - new ones are added with every update; let us know if we missed your favorite ones
   * Facebook
@@ -121,14 +124,47 @@ Or if needed, upload manually;
 30. Hard Worker theme
 31. Temporarily Closed theme
 32. Dumper Truck theme
-33. Main settings
-34. Design settings
-35. Content settings
-36. Access settings
-37. Support
+33. 000webhost theme
+34. Work Desk theme
+35. Main settings
+36. Design settings
+37. Content settings
+38. Access settings
+39. Support
 
 
 == Changelog ==
+
+= 3.31 =
+* 2019/01/15
+* minor security fix
+
+= 3.30 =
+* 2018/12/18
+* minor security fixes in admin
+* moved SN & MailOptin to the beginning of featured plugins list
+* new cache busting for SiteGround SuperCacher
+* removed "add media" from content field
+* moved "show some love" up in admin, below content
+
+= 3.25 =
+* 2018/11/27
+* new theme - Work Desk
+* started promoting SN & MailOptin in featured plugins tab
+* wp_redirect() vulnerability fix
+
+= 3.20 =
+* 2018/11/12
+* few bug fixes
+* integration with MailOptin - collect leads & emails with in-content forms and popups
+* we're at 1,820,000 downloads
+
+= 3.15 =
+* 2018/08/22
+* minor bug fixes
+* new theme: 000webhost
+* added custom settings for 000webhost users
+* we're at 1,634,783 downloads
 
 = 3.10 =
 * 2018/06/19
